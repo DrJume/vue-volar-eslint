@@ -21,7 +21,7 @@ module.exports = {
   overrides: [
     {
       // <script> in .vue files
-      files: ['*.vue.ts', '*.vue.js'],
+      files: ['*.vue.ts', '*.vue.js', '*.vue.tsx', '*.vue.jsx'],
       rules: {
         // ignore invalid template errors in virtual code
         'prefer-const': 'off',
