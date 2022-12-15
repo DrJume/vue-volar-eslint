@@ -1,6 +1,11 @@
 <script setup lang="ts">
+import type { Component } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+
+const test = (component: Component) => component
+
+test(TheWelcome)
 </script>
 
 <template>
