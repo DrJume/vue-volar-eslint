@@ -18,20 +18,4 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.json'],
   },
-  // ignore <template>, <style> and SFC
-  ignorePatterns: ['**/*.vue', '**/*.html', '**/*.css', '**/*.scss'],
-  overrides: [
-    {
-      // <script> in .vue files
-      files: ['*.vue.ts', '*.vue.js', '*.vue.tsx', '*.vue.jsx'],
-      rules: {
-        // ignore invalid template errors in virtual code
-        'prefer-const': 'off',
-        'no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars': 'off',
-        'prettier/prettier': 'off',
-        // ...
-      },
-    },
-  ],
 }

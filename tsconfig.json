@@ -15,7 +15,9 @@
       "@/*": ["./src/*"]
     }
   },
-
+  "vueCompilerOptions": {
+    "hooks": ["./linting/vue-tsc-hook.js"]
+  },
   "references": [
     {
       "path": "./tsconfig.config.json"
