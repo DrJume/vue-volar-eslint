@@ -2,6 +2,6 @@
 
 module.exports = {
   plugins: [
-    require('../volar-plugins/packages/eslint')(require('./linting/resolve-config.js'))
+    require('@volar-plugins/eslint')(require('./linting/resolve-config.js'))
   ],
 }
