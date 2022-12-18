@@ -18,16 +18,16 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.json'],
   },
-  overrides: [
-    {
-      files: ['*.vue'],
-      parser: 'vue-eslint-parser',
-      parserOptions: {
-        parser: 'espree',
-        // ignore parser for js, ts and let volar provide it
-        js: false,
-        ts: false
-      }
-    }
-  ]
+  // overrides: [
+  //   {
+  //     files: ['*.vue'],
+  //     parser: 'vue-eslint-parser',
+  //     parserOptions: {
+  //       parser: 'espree',
+  //       // ignore parser for js, ts and let volar provide it
+  //       js: false,
+  //       ts: false
+  //     }
+  //   }
+  // ]
 }
