@@ -1,7 +1,26 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+
 defineProps<{
   msg: string
 }>()
+
+const form = ref({
+  a: 1,
+  b: 2,
+  c: 3,
+  d: 4,
+})
+
+async function register() {
+  await new Promise(() => ({
+    a: form.value.a,
+    b: form.value.b,
+    c: form.value.c,
+    d: form.value.d,
+  }))
+}
+void register()
 </script>
 
 <template>
@@ -15,6 +34,7 @@ defineProps<{
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
     </h3>
   </div>
+  {{ form }}
 </template>
 
 <style scoped>

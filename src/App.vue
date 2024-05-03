@@ -1,10 +1,14 @@
 <script setup lang="ts">
-import type { Component } from 'vue'
+import { type Component, ref } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 
 const test = (component: Component) => component
 
+// "Unsafe assignment of an `any` value.eslintts/no-unsafe-assignment" -> type aware rules work inside .vue files, yay!
+const a = 'test' as any
+
+// component file types are not yet understood by eslint using volar
 test(TheWelcome)
 </script>
 
