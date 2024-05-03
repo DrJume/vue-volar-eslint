@@ -25,6 +25,12 @@ devDependencies:
   '@vitejs/plugin-vue-jsx':
     specifier: ^3.1.0
     version: 3.1.0(vite@5.2.11)(vue@3.4.26)
+  '@volar/eslint':
+    specifier: ^2.2.0
+    version: 2.2.0
+  '@vue/language-core':
+    specifier: ^2.0.16
+    version: 2.0.16(typescript@5.4.5)
   '@vue/tsconfig':
     specifier: ^0.5.1
     version: 0.5.1
@@ -1312,6 +1318,14 @@ packages:
     dependencies:
       vite: 5.2.11(@types/node@20.12.8)
       vue: 3.4.26(typescript@5.4.5)
+    dev: true
+
+  /@volar/eslint@2.2.0:
+    resolution: {integrity: sha512-mrj5uDjPzviY+tv4SDpObA83Hgbj9cNUhXNZ7p1+bz8wTC2LZV7/ZKF6a53W+Cg07/9mIy1an5i/QS9jnkgDvA==}
+    dependencies:
+      '@types/eslint': 8.56.10
+      '@volar/language-core': 2.2.0
+      vscode-languageserver-textdocument: 1.0.11
     dev: true
 
   /@volar/language-core@2.2.0:
@@ -3368,6 +3382,10 @@ packages:
       rollup: 4.17.2
     optionalDependencies:
       fsevents: 2.3.3
+    dev: true
+
+  /vscode-languageserver-textdocument@1.0.11:
+    resolution: {integrity: sha512-X+8T3GoiwTVlJbicx/sIAF+yuJAqz8VvwJyoMVhwEMoEKE/fkDmrqUgDMyBECcM2A2frVZIUj5HI/ErRXCfOeA==}
     dev: true
 
   /vue-eslint-parser@9.4.2(eslint@8.57.0):
